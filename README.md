@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Angular QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 
@@ -143,3 +144,7 @@ Shut it down manually with `Ctrl-C`.
 
 [travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
 [travis-badge-url]: https://travis-ci.org/angular/quickstart
+=======
+# angular2-weather-app
+Weather App built for FreeCodeCamp challenge.
+>>>>>>> f68322f859344c72ed6e60e1d1622da8c1e074a5
