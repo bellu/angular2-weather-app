@@ -1,0 +1,37 @@
+<div class="main-meteo {{weather?.weather[0].main}}" >
+    <div class="card">
+        <div class="temperature-container clearfix">
+            <span class="temperature">{{weather?.main.temp}} <span class="temp-button" (cdivck)="switchMeter()">°{{currentMeter}}</span></span>
+            <span class="weather-text">{{weather?.weather[0].main}}</span>
+        </div>
+        <h1>{{ip?.city}}, {{ip?.country}}</h1>
+        <ul class="clearfix">
+            <li *ngIf="weather?.weather[0].main == 'Thunderstorm'">
+                <div class="basecloud"></div>
+                <div class="icon-thunder"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Drizzle'">
+                <div class="basecloud"></div>
+                <div class="icon-drizzle"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Snow'">
+                <div class="basecloud"></div>
+                <div class="icon-snowing"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Atmosphere'">
+                <div class="icon-mist"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Clear'">
+                <div class="icon-sun"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Clouds'">
+                <div class="icon-cloud"></div>
+            </li>
+            <li *ngIf="weather?.weather[0].main == 'Rain'">
+                <div class="basecloud"></div>
+                <div class="icon-rainy"></div>
+            </li>
+            
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Bitter', serif;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;        
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+   
+
+}
+ul li {
+    list-style-type: none;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+ul li div {
+    display: inline-flex;
+}
+
+div.temperature-container {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;        
+}
+
+span.temperature,span.weather-text {
+     font-family: 'Bitter', serif;
+    font-size: 16px;  
+}
+
+span.temperature {
+    float: left;  
+}
+
+span.weather-text {
+    float: right;
+}
+
+.main-meteo {
+    height: 100%;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+    justify-content: center;
+}
+
+.main-meteo.Rain {
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #000428 , #004e92); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #000428 , #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.main-meteo.Thunderstorm {
+    background: #1F1C2C; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1F1C2C , #928DAB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1F1C2C , #928DAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-meteo.Drizzle  {
+    background: #6190E8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6190E8 , #A7BFE8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6190E8 , #A7BFE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-meteo.Snow  {
+    background: #E0EAFC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-meteo.Atmosphere  {
+background: #8e9eab; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-meteo.Clear  {
+background: #FF4E50; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FF4E50 , #F9D423); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FF4E50 , #F9D423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-meteo.Clouds {
+background: #ECE9E6; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.card {
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+
+.temp-button {
+    cursor: pointer;
+}
